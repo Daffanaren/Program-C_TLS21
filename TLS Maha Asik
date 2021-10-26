@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main () 
+{
+int tot;
+int jumlah = 0;
+float rata;
+printf ("Masukkan banyak nilai : ");
+scanf ("%d", &tot);
+for (int x = 0; x < tot; x++){
+int temp;
+printf ("Masukkan nilai ke-%d : ", x + 1);
+scanf ("%d", &temp);
+jumlah += temp;} 
+rata = (float) jumlah / tot;
+printf ("\nJumlah : %d\nBanyak nilai : %d\nRata rata : %.2f\n", 
+jumlah,tot, rata);
+return 0;
+}
+
